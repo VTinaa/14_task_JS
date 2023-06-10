@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.drop_down {
+    background-color: #af2646;
+    color: #fff;
+    text-transform: uppercase;
+    width: 400px;
+}
+li{
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #fff;
+    cursor: pointer;
+}
+.drop_down>li:first-child{
+    border: none;
+}
+.drop_down>li{
+    padding-left: 20px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+
+}
+.drop_down li span{
+    margin-right: 10px;
+}
+.drop_down>li span:last-child{
+    position: absolute;
+    right: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    color:#fff;
+    transition: transform 0.5s;
+}
+.drop_down>li span.rotete_arr{
+    color: #6a6869;
+    transform:rotate(-180deg)
+}
+.drop_down ul li .items{
+    background-color: #5e252c;
+    padding-left: 40px;  
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-right: 0;
+    transition: margin 1s;
+}
+.drop_down ul li .move_item{
+    margin-left: 50px;
+}
+.drop_down  ul li{
+    font-size: 0.9em;
+}
+.none{
+    display: none !important;    
+}
+.more{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.more div{
+    background-color: #fff;
+    width: 60%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+body .more:nth-of-type(1) div{
+    background-image: url(../img/language-icon.png);
+}
+body .more:nth-of-type(2) div{
+    background-image: url(../img/notification.png);
+}
+body .more:nth-of-type(3) div{
+    background-image: url(../img/privacy-policy.png);
+}
